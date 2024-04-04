@@ -9,7 +9,7 @@ print(mylist)
 
 
 # Duplicates (Lists allow duplicate values)
-print("\n")
+#print("\n")
 mylist = ["Vidhi", "Ekta", "Deep", "Savan", "Ekta", "Vidhi"]
 print(mylist)
 
@@ -390,7 +390,7 @@ print(mylist)
 # sort() (Sorts the list)
 # The sort() method sorts the list ascending by default.
 print("\n")
-mylist = ["apple", "chiku", "kiwi", "cherry"]   
+mylist = ["apple", "chiku", "kiwi", "cherry"]
 mylist.sort()
 print(mylist)
 

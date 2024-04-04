@@ -9,4 +9,22 @@ sum = num1 + num2
 print("sum of two number is =", sum)
 
 
+print("\n")
+x = 5
+y = 5
+txt = x
+print(x is y)
+print(y is x)
+print(x == y)
+
+
+
+
+
+
+
+
+
+
+
 

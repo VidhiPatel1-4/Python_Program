@@ -1,4 +1,6 @@
 #print hello world
+import add_twonumber
+
 print("Hello World!")
 
 
@@ -6,6 +8,29 @@ print("Hello World!")
 print("\n")
 a = 'Hello'
 print(a)
+
+
+#Global Variables (Variables that are created outside of a function  are known as global variables.)
+#Global variables can be used by everyone, both inside of functions and outside.
+print("\n")
+x = "Vidhi"
+
+def func():
+    x = "Deep"
+    print("my name is = " + x)
+
+func()
+print("my name is = " + x)
+
+
+#global Keyword (If you use the global keyword, the variable belongs to the global scope)
+print("\n")
+def func():
+    global x
+    x = "Ekta"
+
+func()
+print("my name is = " + x)
 
 
 #multiline comment
@@ -148,10 +173,12 @@ print("\n")
 x = 'VIDHI patel'
 print(x.split())
 
+
 #capitalize string (first character is convert into capital)
 print("\n")
 x = 'vidhi'
 print(x.capitalize())
+
 
 #casefold string (first character is convert in to small)
 print("\n")
@@ -182,11 +209,13 @@ txt = 'vidhi patel.'
 x = txt.endswith(".")
 print(x)
 
+
 #expandtabs (give the space between string)
 print("\n")
 txt = 'v\ti\td\th\ti'
 x = txt.expandtabs(3)
 print(x)
+
 
 #find (finds the first occurrence of the specified value.)
 print("\n")
@@ -195,8 +224,8 @@ x = txt.find("patel")
 print(x)
 
 
-#Use "f" to convert a number into a fixed point number, default with 6 decimals,
-# but use a period followed by a number to specify the number of decimals:
+#formate (Use "f" to convert a number into a fixed point number, default with 6 decimals,
+# but use a period followed by a number to specify the number of decimals:)
 
 #txt = "The price is {:.2f} dollars."
 #print(txt.format(45)) = 45.00
@@ -250,7 +279,7 @@ x = txt.isdigit()
 print(x)
 
 
-#isidentifier (Returns True if the string is an identifier like its camel case , pascle case, snake case its true)
+#isidentifier (Returns True if the string is an variable identifier like its camel case , pascle case, snake case its true)
 print("\n")
 txt = 'vidhiPatel_14'
 x = txt.isidentifier()
@@ -339,7 +368,7 @@ print(x)
 #replace (Returns a string where a specified value is replaced with a specified value)
 print("\n")
 txt = 'vidhi patel'
-x = txt.replace("vidhi" , "nidhi")
+x = txt.replace("vidhi", "nidhi")
 print(x)
 
 
@@ -478,4 +507,28 @@ a = a + b
 print('a = ', a, '\n' 'b = ', b)
 
 
+
+
+# Python input() Function
+# Ask for the user's name and print it
+#print("\n")
+#x = input("enter your name:")
+#print('hello, ' + x)
+
+# Add Input
+print("\n")
+#mylist = ["vidhi", "ekta", "deep"]
+#y = input("enter the string: ")
+#mylist.append(y)
+#mylist.remove(y)
+#mylist.sort()
+#print(y[1:10:2].split())
+#print(mylist)
+
+
+# Addition
+x = int(input("enter a number: "))
+y = int(input("enter a second number: "))
+z = x % y
+print(z)
 
