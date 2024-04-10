@@ -202,6 +202,16 @@ print(y)
 
 
 
+print("\n")
+mytuple = ("orange", "kiwi", "banana", "chiku")
+(vidhi, *deep, ekta) = mytuple
+print(vidhi)
+print(deep)
+print(ekta)
+
+
+
+
  # vartiable name should be proper with same convention
 # do add comments
 # input:
